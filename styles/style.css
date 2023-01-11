@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@1,900&display=swap');
+
+
+
+:root {
+    --black: #1E1E1E;
+    --gray: #606060;
+    --blue: #0085FF;
+    --lightwhite: #F6F6F6;
+    --yellow: rgb(255, 217, 0);
+}
+
+
+* {
+    font-family: 'Akshar';
+    overflow-x: hidden;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0085FF;
+    border-radius: 5px;
+    width: 4px !important;
+}
+
+.section1 {
+    height: 100vh;
+}
+
+.section1-main-box__color {
+    width: 100vw;
+    height: 100%;
+    /* background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0.676) 90% ) !important; */
+    background-image: url(../img/bg-img-first-section.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: var(--gray);
+    padding: 0 20px;
+    box-shadow: 0px 3px 2px black;
+    position: fixed;
+    z-index: 120;
+    overflow: hidden;
+}
+
+#btn-cuenta {
+    color: #0085FF;
+}
+
+#btn-more {
+    display: none;
+}
+
+.logotipo-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-nav__img {
+    z-index: 100 !important;
+    width: 4.5vw;
+}
+
+.logo-nav__name {
+    font-family: 'Alice', serif;
+    color: var(--wblack);
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+h4 {
+    text-shadow: 0 0 8px rgb(255, 255, 255), 0 0 8px rgb(255, 255, 255), 0 0 16px rgb(255, 255, 255);
+}
+
+h3 {
+    overflow: hidden;
+}
+
+#titulo-section-one {
+    font-size: 10vw;
+    font-weight: 600;
+    overflow: hidden;
+    transform: translateX(-100vw);
+}
+
+.section2 {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(85, 80, 0) 25%, rgb(197, 187, 0) 40%, rgba(255,244,0,1) 50%);
+}
+
+
+.titulo-paquetes {
+    font-size: 7vw;
+    font-family: 'Public Sans', sans-serif;
+    color: rgb(255, 0, 0) !important;
+    text-shadow: .8vw .8vw .8vw rgb(0, 0, 0);
+}
+
+/* #bg-white {
+    height: 25vh !important;
+} */
+
+h6 {
+    overflow: hidden;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+}
+
+footer {
+    height: 20vh;
+}
+
+#bg-white {
+    transform: translateX(-100vw);
+}
+
+.entrada-titulo {
+	transform: translateX(0vw) !important;
+	transition: .5s ease-in-out all !important;
+}
+
+.logo-footer {
+    width: 4vw;
+}
+
+

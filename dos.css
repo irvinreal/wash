@@ -1,0 +1,74 @@
+.boton {
+    display: inline-flex;
+    width: 100%;
+    height: 4.5rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(193, 205, 214);
+    font-size: 28px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.boton span {
+    color: white;
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton.dos .icono {
+    display: flex;
+    position: absolute;
+    left: 30px;
+    z-index: 2;
+    transition: .2s ease-in-out all;
+}
+
+/* Botón dos */
+.boton.dos::after {
+    content: "";
+    width: 123%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 32px);
+    border-bottom: 80px solid rgb(0, 0, 0);
+    border-right: 90px solid transparent;
+}
+
+.boton.dos:hover::after {
+    left: 0;
+    transition: .4s ease-in-out;
+
+}
+
+.boton.dos:hover .icono {
+    left: 80%;
+}
+
+.boton.dos:hover span {
+    color: white;
+}
+
+.boton.dos i {
+    font-size: 40px;
+}
+
+.boton.dos:hover {
+    background-color: red;
+    transition: .3s ease-in-out;
+}
+
+.prender {
+    color: black;
+    transition: .3s ease-in-out;
+}
